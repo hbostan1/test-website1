@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header */
+.header {
+    background-color: #e4d5b7;
+    width: 100%;
+    display: flex;
+    align-items: center;  /* Center items vertically */
+    justify-content: space-between; /* Space out items */
+    padding: 10px 20px; /* Padding inside the header */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+/* Style the logo image */
+.header img {
+    width: 150px;
+    height: 150px;
+}
+
+/* Remove default list styles and make the list horizontal */
+.header-menu {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Use flexbox to arrange items horizontally */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.header-menu li {
+    margin-left: 20px;
+}
+
+/* Style the links */
+.header-menu li a {
+    color: #fff; /* Link color */
+    transition: color 0.4s, transform 0.3s; /* Smooth transition for color and transform */
+    font-size: 20px;
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Padding for the links */
+    text-decoration: none; /* Remove underline */
+}
+
+.header-menu li a:hover {
+    color: #3e2723;
+    border-radius: 20px;
+}
+
+.banner {
+    height: auto; /* Adjust the height as needed */
+    display: flex; /* Use flexbox for banner content */
+    flex-direction: column; /* Arrange content vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text alignment */
+    padding: 20px 10px;
+}
+
+.banner h2, p {
+    color: #722b3f;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.banner h2 {
+    font-size: 28px;
+}
+
+.banner p {
+    font-size: 12px;
+}
+
+.services {
+    text-align: center;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    grid-gap: 20px;
+    margin: 40px 20px;
+}
+
+.services img {
+    border-radius: 0%;
+    transition: height 1s, transform 1s;
+    max-width: 100%; /* Make sure images are responsive */
+    height: auto;
+}
+
+.services img:hover {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+p {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.about-us h3 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding-left: 20px;
+    padding-top: 5%;
+    font-size: 26px;
+}
+
+.about-us p {
+    padding-top: 15px;
+    padding-left: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    width: 80%;
+    max-width: 800px; /* Ensure it doesn't get too wide */
+    margin: 0 auto; /* Center horizontally */
+    line-height: 1.5;
+}
+
+.our-mission h3 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding-left: 20px;
+    padding-top: 3%;
+    font-size: 26px;
+}
+
+.our-mission p {
+    padding-top: 15px;
+    padding-left: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    width: 80%;
+    max-width: 800px; /* Ensure it doesn't get too wide */
+    margin: 0 auto; /* Center horizontally */
+    line-height: 1.5;
+}
+
+.animation {
+    height: 350px;
+    width: 350px;
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+    .header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .header-menu li a {
+        font-size: 18px;
+        padding: 12px 18px;
+    }
+
+    .banner h2 {
+        font-size: 24px;
+    }
+
+    .banner p {
+        font-size: 10px;
+    }
+
+    .services img {
+        height: 150px;
+    }
+
+    .animation {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header-menu li {
+        margin-left: 10px;
+    }
+
+    .header-menu li a {
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+
+    .banner h2 {
+        font-size: 20px;
+    }
+
+    .banner p {
+        font-size: 8px;
+    }
+
+    .services img {
+        height: 100px;
+    }
+
+    .about-us p, .our-mission p {
+        width: 40%;
+    }
+
+    .animation {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-menu li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .header-menu li a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .banner h2 {
+        font-size: 18px;
+    }
+
+    .banner p {
+        font-size: 6px;
+    }
+
+    .services img {
+        height: 80px;
+    }
+
+    .about-us p, .our-mission p {
+        width: 40%;
+    }
+
+    .animation {
+        height: 200px;
+        width: 200px;
+    }
+}
