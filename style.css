@@ -237,10 +237,6 @@ body{
         height: 80px;
     }
 
-    .header{
-        display: inline-block;
-    }
-
 
 
     .header-menu li {
@@ -248,12 +244,8 @@ body{
         
     }
 
-    .header-menu li {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
     .header-menu li a {
+        display: inline-block;
         font-size: 14px;
         padding: 8px 12px;
     }
