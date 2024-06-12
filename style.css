@@ -206,14 +206,13 @@ body{
     }
 
     .header-menu {
-        flex-direction: column;
         display: none;
         background-color: #f0e6e4;
         padding: 5px;
-        width: 100%;
+        width: 50%;
         position: absolute;
-        top: 100px;
-        left: 0;
+        top: 35px;
+        left: 150px;
     }
 
     .header-menu.show {
@@ -305,3 +304,11 @@ body{
         width: 100px;
     }
 }
+
+
+
+
+
+
+
+
