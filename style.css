@@ -27,6 +27,15 @@ body{
     height: 150px;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+}
+
 /* Remove default list styles and make the list horizontal */
 .header-menu {
     list-style-type: none; /* Remove bullet points */
@@ -178,8 +187,11 @@ body{
     }
 
     .animation {
-        height: 300px;
-        width: 300px;
+        position: relative;
+        right: 0;
+        top: 80%;
+        height: 200px;
+        width: 200px;
     }
 }
 
@@ -189,13 +201,34 @@ body{
         height: 100px;
     }
 
+    .menu-toggle {
+        display: inline-block;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        display: none;
+        background-color: #f0e6e4;
+        padding: 5px;
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+
+    .header-menu.show {
+        display: flex;
+    }
+
     .header-menu li {
         margin-left: 10px;
+        
     }
 
     .header-menu li a {
         font-size: 16px;
         padding: 10px 16px;
+        float: right;
     }
 
     .banner h2 {
@@ -206,41 +239,8 @@ body{
         font-size: 8px;
     }
 
-    .services img {
-        height: 100px;
-    }
-
-    .about-us p, .our-mission p {
-        width: 90%;
-    }
-
-    .animation {
-        height: 250px;
-        width: 250px;
-    }
-}
-
-@media (max-width: 768px) {
-    .header img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .header-menu li {
-        margin-left: 10px;
-    }
-
-    .header-menu li a {
-        font-size: 16px;
-        padding: 10px 16px;
-    }
-
-    .banner h2 {
-        font-size: 20px;
-    }
-
-    .banner p {
-        font-size: 8px;
+    .banner h2, p{
+        z-index: 1;
     }
 
     .services img {
@@ -298,15 +298,10 @@ body{
     }
 
     .animation {
-        height: 200px;
-        width: 200px;
+        position: relative;
+        right: 0;
+        top: 80%;
+        height: 100px;
+        width: 100px;
     }
 }
-
-
-
-
-
-
-
-
