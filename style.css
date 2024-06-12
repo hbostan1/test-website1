@@ -213,9 +213,6 @@ body{
         font-size: 8px;
     }
 
-    .banner h2, p{
-        z-index: 1;
-    }
 
     .services img {
         height: 100px;
