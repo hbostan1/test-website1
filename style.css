@@ -202,7 +202,6 @@ body{
     .header-menu li a {
         font-size: 16px;
         padding: 10px 16px;
-        float: right;
     }
 
     .banner h2 {
@@ -236,15 +235,6 @@ body{
         width: 80px;
         height: 80px;
     }
-
-.header {
-    background-color: #f0e6e4;
-    width: 100%;
-    display: flex;
-    align-items: center;  /* Center items vertically */
-    justify-content: space-between; /* Space out items */
-    padding: 10px 20px; /* Padding inside the header */
-}
 
 
     .header-menu li {
