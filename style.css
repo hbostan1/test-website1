@@ -265,6 +265,29 @@ body{
         height: 80px;
     }
 
+    .menu-toggle {
+        display: inline-block;
+    }
+
+    .header-menu {
+        display: none;
+        background-color: #f0e6e4;
+        padding: 5px;
+        width: 50%;
+        position: absolute;
+        top: 35px;
+        left: 150px;
+    }
+
+    .header-menu.show {
+        display: flex;
+    }
+
+    .header-menu li {
+        margin-left: 10px;
+        
+    }
+
     .header-menu {
         flex-direction: column;
         align-items: center;
