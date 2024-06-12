@@ -237,6 +237,10 @@ body{
         height: 80px;
     }
 
+    .header{
+        display: inline-block;
+    }
+
 
 
     .header-menu li {
