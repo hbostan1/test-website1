@@ -224,7 +224,7 @@ body{
 
     .animation {
         position: relative;
-        left: 30px;
+        left: 20%;
         top: 80%;
         height: 250px;
         width: 250px;
@@ -266,7 +266,7 @@ body{
 
     .animation {
         position: relative;
-        right: 0;
+        left: 30%;
         top: 80%;
         height: 100px;
         width: 100px;
